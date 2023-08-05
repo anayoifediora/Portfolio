@@ -16,13 +16,13 @@
 }
 .nav {
   position:relative;
-  top:-65px;
+  top:-60px;
   right:50px;
   font-size: 20px;
   margin-right: 20px;
 }
 #root {
-  background-color: var(--french-gray);
+
   height: 100vh;
   width: 100vw;
 
@@ -39,10 +39,21 @@
 
 .page-titles {
   margin:20px;
+  margin-bottom: 30px;
   font-size:30px;
 
 }
-
-
+.contact-form {
+  width: 50%;
+  background-color: var(--charcoal);
+  padding: 20px;
+  position:relative;
+  left:3%;
+  color: var(--papaya-whip);
+  font-size: 20px;
+}
+.contact-message {
+  height: 150px;
+}
 
 
