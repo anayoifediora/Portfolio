@@ -5,9 +5,9 @@ const Navigation = ({currentPage, handlePageChange}) => {
 
     return (
         <div>
-            <ul className="nav justify-content-end">
+            <ul className="nav nav-pills justify-content-end">
                 <li className="nav-item">
-                    <a className={currentPage === "AboutMe" ? 'nav-link active' : 'nav-link'} 
+                    <a className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'} 
                        aria-current="page" 
                        href="#aboutme"
                        onClick={() => handlePageChange('AboutMe')}  
