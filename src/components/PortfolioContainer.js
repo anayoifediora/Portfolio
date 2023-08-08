@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React from 'react';
 import Navigation from './Navigation';
 import Header from './Header';
 import Footer from './Footer';
@@ -13,9 +13,14 @@ import { render } from '@testing-library/react';
 function PortfolioContainer() {
 
     return (
-        <div>
-            <Header /> 
-        </div>
+        <>
+            <div>
+                <Header /> 
+            </div>
+            <div>
+                <Footer />
+            </div>
+        </>
 
     );
 }
