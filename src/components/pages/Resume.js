@@ -1,21 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Resume = () => {
     return (
         <div>
             <h2 className='page-titles'>Resume</h2>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-            velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-            ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-            non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-            ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-            rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-            tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-            porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-            vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus.
+              Download my <a href='../../Assets/KANA Tech CV.docx' download='KANA Tech CV.docx'>Resume</a>
             </p>
+            <h3>Front-end Proficiencies</h3>
+            <ul style ={{fontSize:'20px'}}>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>Responsive Design</li>
+                <li>React</li>
+                <li>Bootstrap</li>
+            </ul>
+            <h3>Back-end Proficiencies</h3>
+            <ul style ={{fontSize:'20px'}}>
+                <li>APIs</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>MySQL, Sequelize</li>
+                <li>MongoDB, Mongoose</li>
+                <li>REST</li>
+                <li>GraphQL</li>
+            </ul>
         </div>
     );
 };

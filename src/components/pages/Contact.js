@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 
 import { validateEmail, validateName } from '../../utils/helpers';
 
@@ -6,6 +6,7 @@ import { validateEmail, validateName } from '../../utils/helpers';
         const [name, setName] = useState('');
         const [email, setEmail] = useState('');
         const [message, setMessage] = useState('');
+        const [errorMessage, setErrorMessage] = useState('');
 
         const handleInputChange = (event) => {
             const { target } = event;
@@ -18,8 +19,12 @@ import { validateEmail, validateName } from '../../utils/helpers';
                 setEmail(inputValue);
             } else if (inputType === 'message') {
                 setMessage(inputValue);
+            } else if (!validateEmail(email)) {
+                setErrorMessage ('Please enter a valid email address');
             }
             return;
+
+            
         };
 
         const handleFormSubmit = (event) => {
@@ -30,7 +35,7 @@ import { validateEmail, validateName } from '../../utils/helpers';
                 return;
             }
             if (!validateEmail(email)) {
-                alert('Please enter a valid email address');
+                setErrorMessage('Please enter a valid email address');
                 return;
             }
             if (!message) {
@@ -77,6 +82,11 @@ import { validateEmail, validateName } from '../../utils/helpers';
                     </div>
                     <button onClick={handleFormSubmit}type="button" class="btn btn-primary btn-lg" style={{width: '20%'}}>Submit</button>
                 </form>
+                
+                <div>
+                    <p className='error'>{errorMessage}</p>
+                </div>
+                
             </div>
         );
     }

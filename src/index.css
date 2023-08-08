@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   flex: 1;
+  background-color: var(--french-gray);
 
 }
 
@@ -58,11 +59,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--charcoal);
-  color: var(--papaya-whip);
   font-size: 20px;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 10px 200px 10px;
   text-align: justify;
 }
 .my-image {
@@ -80,6 +79,7 @@ body {
   left:3%;
   color: var(--papaya-whip);
   font-size: 20px;
+  margin-bottom: 40px;
 }
 .contact-message {
   height: 150px;
@@ -88,6 +88,7 @@ body {
   width: 400px;
   margin: 0px;
   opacity: 0.5;
+  background-color: var(--french-gray);
 }
 .app-image:hover {
   opacity: 1;
@@ -109,19 +110,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--french-gray);
-  position: relative;
-  bottom: 0px;
+  background-color: var(--charcoal);
   height: 100px;
   flex-shrink: 0;
   
 }
 .footer a {
-  font-size: 20px;
+  font-size: 25px;
   margin: 10px;
   text-decoration: none;
 }
 .footer a:hover {
-  color: var(--oxford-blue);
+  color: var(--papaya-whip);
 }
-
+.error {
+  font-weight: 200;
+  font-size: 25px;
+  color:red;
+  margin: 10px;
+}
