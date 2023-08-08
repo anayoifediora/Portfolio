@@ -1,17 +1,19 @@
-import React, { useState }from 'react';
+import React from 'react';
+import myImage from '../../Assets/Kana.jpg';
 
 
 
 const AboutMe = () => {
 
     return (
-        <div>
+        <div style={{display: 'flex', flexDirection: 'column',}}>
             <h2 className='page-titles'>About Me</h2>
-            <p>
+            <img src={myImage} className='my-image'/>
+            <p className='my-info'>
                 Hello! I am Mr. Kanayochi Ifediora, a budding Web developer. 
                 I am married with two children and my interests include soccer, 
                 basketball, chess, and a love for cars. One strange fact about 
-                me, I love spotting Aeroplanes! I have a background in Chemical 
+                me? I love spotting Aeroplanes! I have a background in Chemical 
                 Engineering, and I have also worked in Financial Services for a 
                 long time, but I have recently developed an interest in Information 
                 Technology and I am fascinated by it. I have decided to learn Web 

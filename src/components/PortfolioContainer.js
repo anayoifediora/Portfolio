@@ -14,12 +14,11 @@ function PortfolioContainer() {
 
     return (
         <>
-            <div>
+            
                 <Header /> 
-            </div>
-            <div>
+            
                 <Footer />
-            </div>
+            
         </>
 
     );
