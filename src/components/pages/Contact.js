@@ -7,6 +7,7 @@ import { validateEmail, validateName } from '../../utils/helpers';
         const [email, setEmail] = useState('');
         const [message, setMessage] = useState('');
         const [errorMessage, setErrorMessage] = useState('');
+    
 
         const handleInputChange = (event) => {
             const { target } = event;
@@ -17,12 +18,9 @@ import { validateEmail, validateName } from '../../utils/helpers';
                 setName(inputValue);
             } else if (inputType === 'email') {
                 setEmail(inputValue);
-            } else if (inputType === 'message') {
+            } else {
                 setMessage(inputValue);
-            } else if (!validateEmail(email)) {
-                setErrorMessage ('Please enter a valid email address');
-            }
-            return;
+            } 
 
             
         };
@@ -30,21 +28,22 @@ import { validateEmail, validateName } from '../../utils/helpers';
         const handleFormSubmit = (event) => {
             event.preventDefault();
 
-            if (!validateName(name)) {
-                alert('Please enter a valid name');
+            if (!validateName(name) || !name) {
+                setErrorMessage('Please enter a valid name');
                 return;
             }
-            if (!validateEmail(email)) {
+            if (!validateEmail(email) || !email) {
                 setErrorMessage('Please enter a valid email address');
                 return;
             }
             if (!message) {
-                alert('Please enter a message');
+                setErrorMessage('Please enter a message');
                 return;
             }
             setName('');
             setEmail('');
             setMessage('');
+            setErrorMessage('');
 
         };
         return (

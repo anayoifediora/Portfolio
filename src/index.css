@@ -9,6 +9,7 @@ body {
   min-height:100vh;
   display: flex;
   flex-direction: column;
+  width:fit-content;
 }
 #root {
   min-height: 100vh;
@@ -36,6 +37,7 @@ body {
   right:50px;
   font-size: 20px;
   margin-right: 20px;
+  
 }
 
 .nav-item {
@@ -129,3 +131,27 @@ body {
   color:red;
   margin: 10px;
 }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    top: 20px;
+  }
+  .nav-item {
+    width:fit-content;
+  }
+  .page-titles {
+    margin-top: 40px;
+  }
+  .btn {
+    flex: 1 0 100%;
+  }
+  .contact-form {
+    width: 80%;
+    position: relative;
+    left: 50px;
+  }
+}
+

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <div>
+        <div style={{marginLeft:'20px'}}>
             <h2 className='page-titles'>Resume</h2>
             <p>
               Download my <a href='../../Assets/KANA Tech CV.docx' download='KANA Tech CV.docx'>Resume</a>
