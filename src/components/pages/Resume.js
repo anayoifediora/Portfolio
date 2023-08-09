@@ -1,11 +1,12 @@
 import React from 'react';
 
+import Myresume from '../../Assets/KANA Tech CV.docx';
 const Resume = () => {
     return (
         <div style={{marginLeft:'20px'}}>
             <h2 className='page-titles'>Resume</h2>
             <p>
-              Download my <a href='../../Assets/KANA Tech CV.docx' download='KANA Tech CV.docx'>Resume</a>
+              Download my <a href={Myresume} download='KANA Tech CV.docx'>Resume</a>
             </p>
             <h3>Front-end Proficiencies</h3>
             <ul style ={{fontSize:'20px'}}>
