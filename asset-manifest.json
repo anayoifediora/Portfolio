@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a98b2425.css",
+    "main.js": "/portfolio/static/js/main.f07aa3cc.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/10-marlin.gif": "/portfolio/static/media/10-marlin.1cc41040a1040b6529df.gif",
+    "static/media/Employee database.png": "/portfolio/static/media/Employee database.8173a74d671b0344ed96.png",
+    "static/media/Kana.jpg": "/portfolio/static/media/Kana.1a740efa13d8a0e45d31.jpg",
+    "static/media/Workday Scheduler.png": "/portfolio/static/media/Workday Scheduler.cd5667b0f7d4d90dd77c.png",
+    "static/media/Weather Dashboard.png": "/portfolio/static/media/Weather Dashboard.aeab6a7a5b6b92de37ae.png",
+    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio/index.html",
+    "main.a98b2425.css.map": "/portfolio/static/css/main.a98b2425.css.map",
+    "main.f07aa3cc.js.map": "/portfolio/static/js/main.f07aa3cc.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a98b2425.css",
+    "static/js/main.f07aa3cc.js"
+  ]
+}
