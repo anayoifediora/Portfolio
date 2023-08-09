@@ -15,15 +15,20 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   flex: 1;
-  background-color: var(--french-gray);
+  /* background-color: var(--french-gray); */
 
 }
 
  * {
   font-family: 'Preahvihear', sans-serif;
  }
+ .header {
+  
+  background-color: var(--charcoal);
+  
+ }
 .title {
-  color: var(--oxford-blue);
+  color: white;
   font-size: 50px;
   font-weight: bold;
   padding: 20px;
@@ -43,28 +48,23 @@ body {
 .nav-item {
   font-size: 22px;
 }
-/* #root p {
-  font-size: 20px;
-  margin:10px;
-  padding:20px;
-
-} */
-
 .page-titles {
   margin:20px;
   margin-bottom: 30px;
-  font-size:30px;
+  font-size:40px;
   font-weight: bold;
-
+  color: var(--charcoal)
 }
+
 .my-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
-  padding: 10px;
+  padding: 40px;
   margin: 10px 10px 200px 10px;
   text-align: justify;
+  color: var(--charcoal);
 }
 .my-image {
   margin:auto;
@@ -138,6 +138,9 @@ body {
     position: relative;
     left: 20px;
     top: 20px;
+  }
+  .header {
+    height: 350px;
   }
   .nav-item {
     width:fit-content;

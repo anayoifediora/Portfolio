@@ -9,7 +9,7 @@ const Portfolio = () => {
 
     return (
         <div className='projects-container'>
-            <h2 className='page-titles'>Portfolio</h2>
+            <h2 className='page-titles' style={{textAlign: 'center'}}>Portfolio</h2>
             <div className='row' style={{display: 'flex', justifyContent: 'center'}}>
                 <div className="card" style={{width: '35rem'}}>
                     <img src={Weather} className="app-image card-img-top" alt="..."/>
